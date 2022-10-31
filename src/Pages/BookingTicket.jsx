@@ -58,11 +58,11 @@ export default function BookingTicket() {
                             <div className='text-light ms-5'>
                                 {danhSachGheData.map((item, index) => {
                                     if (item.hang === '') {
-                                        return <div key={index} className='rowNumber' style={{ marginLeft: '14%' }} >
+                                        return <div key={index} className='rowNumber' style={{marginLeft:'5%'}} >
                                             {item.hang} {renderSoGhe(item)}
                                         </div>
                                     } else {
-                                        return <div key={index} className="text-start mt-2 fs-4" style={{ marginLeft: '8%' }}>
+                                        return <div key={index} className="text-start mt-2 fs-4" style={{ margin: 'auto' }}>
                                             {item.hang} {renderDanhSachGhe(item)}
                                         </div>
                                     }
